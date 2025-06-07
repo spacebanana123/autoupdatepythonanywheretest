@@ -21,7 +21,7 @@ def update_server_from_git():
             return json.dumps({'msg': "Wrong event type"})
 
 
-        repo = git.Repo('/var/www/sites/mysite')
+        repo = git.Repo('/home/autodeploymenttesting/mysite/')
 
 
         origin = repo.remotes.origin
